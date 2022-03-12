@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>FD DETAILS ENTRY</title>
+<link rel="stylesheet" type="text/css" href="entry.css"/>
+</head>
+<script type="text/javascript">
+
+function validateform(){
+	
+	
+	var cn = document.myform.centername.value
+	var bn = document.myform.bondnumber.value
+	var bvalue = document.myform.bondvalue.value
+	var bdate = document.myform.bonddate.value
+	var matval = document.myform.maturevalue.value
+	var matdat = document.myform.maturedate.value
+	
+	
+	
+	
+			
+	if (cn==null ||cn==""){
+		alert("please enter CENTER NAME");
+		return false;
+	}
+	
+	if (bn==null ||bn==""){
+		alert("please enter BOND NUMBER");
+		return false;
+	}
+   else {
+		
+		if (isNaN(bn)){
+			alert("please enter BOND NUMBER only in NUMERIC value");
+			return false;
+			
+		}
+   }
+		
+	if (bvalue==null ||bvalue==""){
+		alert("please enter BOND VALUE");
+		return false;
+	}
+   else {
+		
+		if (isNaN(bvalue)){
+			alert("please enter BONDVALUE only in NUMERIC value");
+			return false;
+			
+		}
+   }
+		
+	 if (bdate==null||bdate==""){
+		 alert("please enter BOND DATE");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!bdate.match(re)){
+			 alert("please enter BOND DATE in CorrectFormat i.e is MM/DD/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+		if (matval==null ||matval==""){
+			alert("please enter MATURE VALUE");
+			return false;
+		}
+	   else {
+			
+			if (isNaN(matval)){
+				alert("please enter MATURE VALUE only in NUMERIC value");
+				return false;
+				
+			}
+	   }
+
+
+		if (matdat==null||matdat==""){
+			 alert("please enter MATURE DATE");
+			 return false;
+		 }
+		 else{
+			 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+			 
+			 if(!matdat.match(re)){
+				 alert("please enter MATURE DATE in CorrectFormat i.e is MM/DD/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+				 return false;
+			 }
+		 }
+	
+	return true;
+}
+
+</script>
+<body background="images123.jpg">
+<div id=”header”><img src="logo.jpg"alt="source"/>
+<p style="color:yellow;font-size:15pt;font-weight:bold;">VISAKHA DAIRY</p>
+</div>
+<div id ="navigation"><a href="Developer.html" style="text-decoration:none;color:white">About Developer</a></div>
+<div id="body">
+<form name = "myform"  onsubmit="return validateform()" action = "FddetailsCheck" method = "post">
+<div style="margin-top:20pt;margin-bottom:20pt"><font face="Agency FB" size="+8" 
+><u style="color:#006400;position:relative;left:400px;">FD DETAILS ENTRY</u></font></div>
+<div style="color:brown;position:relative;left:450px;font-family:calibri;font-style:italic;text-decoration: underline;">Time of the Account login is</div>
+<div  id= "demo" style="color:blue;position:relative;left:360px;font-family:TimesNewRoman;font-style:italic;margin-top:10pt;margin-bottom:10pt">
+<script type="text/javascript">document.getElementById("demo").innerHTML=Date();</script>
+</div>
+<div class="n">CENTER NAME</div> 
+<div class="b" style="position:relative;left:530px"><input type="text" name="centername" /></div>
+<div class="n">BOND NUMBER</div> 
+<div class="b" style="position:relative;left:528px"><input type="text" name="bondnumber" /></div>
+<div class="n">BOND VALUE</div> 
+<div class="b" style="position:relative;left:546px"><input type="text" name="bondvalue" /></div>
+<div class="n">DATE OF BOND</div> 
+<div class="b" style="position:relative;left:529px"><input type="text" name="bonddate" /></div>
+<div class="n">MATURE VALUE</div> 
+<div class="b" style="position:relative;left:520px"><input type="text" name="maturevalue" /></div>
+<div class="n">MATURE DATE</div> 
+<div class="b" style="position:relative;left:532px"><input type="text" name="maturedate" /></div>
+
+<div style="float:left;clear:left;position:relative;left:440px;margin:15px"><input type="submit" onclick="return confirm('Make Sure That Above Mentioned Details Are Correct Once you submitted it will NOT BE MODIFIED')" name="pay fee" value="Enter Center Details Successfully" />
+</div>
+</form>
+</div>
+<div id = footer>copyright@visakhaDairy</div>
+
+
+</body>
+</html>

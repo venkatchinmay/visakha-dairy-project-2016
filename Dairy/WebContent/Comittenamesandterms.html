@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>CENTER COMMITTE DETAILS ENTRY PANEL</title>
+<link rel="stylesheet" type="text/css" href="entry.css"/>
+</head>
+<script type="text/javascript">
+function validateform(){
+	
+	
+	var cn = document.myform.centername.value
+	var pn = document.myform.presidentname.value
+	var pet = document.myform.presidentendterm.value
+	var dn1 = document.myform.directorname1.value
+	var det1 = document.myform.directornameendterm1.value
+	var dn2 = document.myform.directorname1.value
+	var det2 = document.myform.directornameendterm1.value
+	var dn3 = document.myform.directorname1.value
+	var det3 = document.myform.directornameendterm1.value
+	var dn4 = document.myform.directorname1.value
+	var det4 = document.myform.directornameendterm1.value
+	var dn5 = document.myform.directorname1.value
+	var det5 = document.myform.directornameendterm1.value
+	var dn6 = document.myform.directorname1.value
+	var det6 = document.myform.directornameendterm1.value
+	var dn7 = document.myform.directorname1.value
+	var det7 = document.myform.directornameendterm1.value
+	var dn8 = document.myform.directorname1.value
+	var det8 = document.myform.directornameendterm1.value
+	var dn9 = document.myform.directorname1.value
+	var det9 = document.myform.directornameendterm1.value
+	
+			
+	if (cn==null ||cn==""){
+		alert("please enter CENTER NAME");
+		return false;
+	}
+	
+	if (pn==null ||pn==""){
+		alert("please enter PRESIDENT NAME");
+		return false;
+	}
+	if (pet==null||pet==""){
+		 alert("please enter PRESIDENT END TERM");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!pet.match(re)){
+			 alert("please enter PRESIDENT END TERM in CorrectFormat i.e is DD/MM/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	if (dn1==null ||dn1==""){
+		alert("please enter DIRECTOR NAME1");
+		return false;
+	}
+	if (det1==null||det1==""){
+		 alert("please enter DIRECTOR END TERM1");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!det1.match(re)){
+			 alert("please enter DIRECTOR END TERM1 in CorrectFormat i.e is DD/MM/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	
+	if (dn2==null ||dn2==""){
+		alert("please enter DIRECTOR NAME2");
+		return false;
+	}
+	if (det2==null||det2==""){
+		 alert("please enter DIRECTOR END TERM2");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!det2.match(re)){
+			 alert("please enter DIRECTOR END TERM2 in CorrectFormat i.e is DD/MM/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	if (dn3==null ||dn3==""){
+		alert("please enter DIRECTOR NAME3");
+		return false;
+	}
+	if (det3==null||det3==""){
+		 alert("please enter DIRECTOR END TERM3");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!det3.match(re)){
+			 alert("please enter DIRECTOR END TERM3 in CorrectFormat i.e is DD/MM/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	if (dn4==null ||dn4==""){
+		alert("please enter DIRECTOR NAME4");
+		return false;
+	}
+	if (det4==null||det4==""){
+		 alert("please enter DIRECTOR END TERM4");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!det4.match(re)){
+			 alert("please enter DIRECTOR END TERM4 in CorrectFormat i.e is DD/MM/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	if (dn5==null ||dn5==""){
+		alert("please enter DIRECTOR NAME5");
+		return false;
+	}
+	if (det5==null||det5==""){
+		 alert("please enter DIRECTOR END TERM5");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!det5.match(re)){
+			 alert("please enter DIRECTOR END TERM5 in CorrectFormat i.e is DD/MM/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	if (dn6==null ||dn6==""){
+		alert("please enter DIRECTOR NAME6");
+		return false;
+	}
+	if (det6==null||det6==""){
+		 alert("please enter DIRECTOR END TERM6");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!det6.match(re)){
+			 alert("please enter DIRECTOR END TERM6 in CorrectFormat i.e is DD/MM/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	if (dn7==null ||dn7==""){
+		alert("please enter DIRECTOR NAME7");
+		return false;
+	}
+	if (det7==null||det7==""){
+		 alert("please enter DIRECTOR END TERM7");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!det7.match(re)){
+			 alert("please enter DIRECTOR END TERM7 in CorrectFormat i.e is DD/MM/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	 
+	if (dn8==null ||dn8==""){
+		alert("please enter DIRECTOR NAME8");
+		return false;
+	}
+	if (det8==null||det8==""){
+		 alert("please enter DIRECTOR END TERM8");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!det8.match(re)){
+			 alert("please enter DIRECTOR END TERM8 in CorrectFormat i.e is DD/MM/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	if (dn9==null ||dn9==""){
+		alert("please enter DIRECTOR NAME9");
+		return false;
+	}
+	if (det9==null||det9==""){
+		 alert("please enter DIRECTOR END TERM9");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!det9.match(re)){
+			 alert("please enter DIRECTOR END TERM1 in CorrectFormat i.e is DD/MM/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	 
+	
+	return true;
+}
+
+</script>
+<body background="images123.jpg">
+<div id=”header”><img src="logo.jpg"alt="source"/>
+<p style="color:yellow;font-size:15pt;font-weight:bold;">VISAKHA DAIRY</p>
+</div>
+<div id ="navigation"><a href="Developer.html" style="text-decoration:none;color:white">About Developer</a></div>
+<div id="body">
+<form name = "myform"  onsubmit="return validateform()" action = "CommiteenamesandtermsEntryCheck" method = "post">
+<div style="margin-top:20pt;margin-bottom:20pt"><font face="Agency FB" size="+8" 
+><u style="color:#006400;position:relative;left:330px;">CENTER COMMITTE DETAILS ENTRY</u></font></div>
+<div style="color:brown;position:relative;left:450px;font-family:calibri;font-style:italic;text-decoration: underline;">Time of the Account login is</div>
+<div  id= "demo" style="color:blue;position:relative;left:410px;font-family:TimesNewRoman;font-style:italic;margin-top:10pt;margin-bottom:10pt">
+<script type="text/javascript">document.getElementById("demo").innerHTML=Date();</script>
+</div>
+<div class= "o">
+<div class="h">CENTER DETAILS</div>
+<div class="n">CENTER NAME</div> 
+<div class="b" style="position:relative;left:530px"><input type="text" name="centername" /></div>
+<div class="n"> MPI/MPAC</div> 
+<div class="b" style="position:relative;left:567px"><select name = "class" ><option value = "MPI"  selected>MPI</option>
+<option value = "MPAC"  selected>MPAC</option></select></div>
+<div class="h"><p>COMMITTE DETAILS</p></div>
+<div class="n"> PRESIDENT/GROUP MEMBER</div> 
+<div class="b" style="position:relative;left:419px"><select name = "class1" ><option value = "PRESIDENT"  selected>PRESIDENT</option>
+<option value = "GROUPMEMBER"  selected>GROUPMEMBER</option></select></div>
+<div class="n"> 
+<table border="0" cellpadding="4" cellspacing="6" >
+<tr style="background-color:yellow">
+<th>MEMBER</th>
+<th>NAME</th>
+<th>DATE OF ENDING TERM</th>
+</tr>
+<tr>
+<td>PRESIDENT/GROUPMEMBER</td>
+<td align="center"><input type="text" name="presidentname" /></td>
+<td align="center"><input type="text" name="presidentendterm" /></td>
+</tr>
+<tr style="background-color:#00FF7F">
+<td colspan="3" align="center">DIRECTORS</td>
+</tr>
+<tr>
+<td>DIRECTOR 1</td>
+<td align="center"><input type="text" name="directorname1" /></td>
+<td align="center"><input type="text" name="directornameendterm1" /></td>
+</tr>
+<tr>
+<td>DIRECTOR 2</td>
+<td align="center"><input type="text" name="directorname2" /></td>
+<td align="center"><input type="text" name="directornameendterm2" /></td>
+</tr>
+<tr>
+<td>DIRECTOR 3</td>
+<td align="center"><input type="text" name="directorname3" /></td>
+<td align="center"><input type="text" name="directornameendterm3" /></td>
+</tr>
+<tr>
+<td>DIRECTOR 4</td>
+<td align="center"><input type="text" name="directorname4" /></td>
+<td align="center"><input type="text" name="directornameendterm4" /></td>
+</tr>
+<tr>
+<td>DIRECTOR 5</td>
+<td align="center"><input type="text" name="directorname5" /></td>
+<td align="center"><input type="text" name="directornameendterm5" /></td>
+</tr>
+<tr>
+<td>DIRECTOR 6</td>
+<td align="center"><input type="text" name="directorname6" /></td>
+<td align="center"><input type="text" name="directornameendterm6" /></td>
+</tr>
+<tr>
+<td>DIRECTOR 7</td>
+<td align="center"><input type="text" name="directorname7" /></td>
+<td align="center"><input type="text" name="directornameendterm7" /></td>
+</tr>
+<tr>
+<td>DIRECTOR 8</td>
+<td align="center"><input type="text" name="directorname8" /></td>
+<td align="center"><input type="text" name="directornameendterm8" /></td>
+</tr>
+<tr>
+<td>DIRECTOR 9</td>
+<td align="center"><input type="text" name="directorname9" /></td>
+<td align="center"><input type="text" name="directornameendterm9" /></td>
+</tr>
+</table>
+</div>
+</div>
+<div style="float:left;clear:left;position:relative;left:440px;margin:15px"><input type="submit" onclick="return confirm('Make Sure That Above Mentioned Details Are Correct Once you submitted it will NOT BE MODIFIED')" name="pay fee" value="Enter Center Details Successfully" />
+</div>
+</form>
+</div>
+<div id = footer>copyright@visakhaDairy</div>
+
+
+</body>
+</html>

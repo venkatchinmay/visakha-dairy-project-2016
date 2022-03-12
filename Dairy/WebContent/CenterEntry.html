@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>CENTER ENTRY</title>
+<link rel="stylesheet" type="text/css" href="entry.css"/>
+</head>
+<script type="text/javascript">
+function validateform(){
+	
+	var bcc = document.myform.bulkcoolingcenter.value
+	var cc = document.myform.centercode.value
+	var cn = document.myform.centername.value
+	var lfn = document.myform.lfno.value
+	var bn = document.myform.bankname.value
+	var jac = document.myform.jointaccountnumber.value
+	var bl = document.myform.banklocation.value
+	var psna = document.myform.psname.value
+	var h1 = document.myform.helper1.value
+	var h2 = document.myform.helper2.value
+	var h3 = document.myform.helper3.value
+	var eq = document.myform.equipmentincenter.value
+	
+	if (bcc==null ||bcc==""){
+		alert("please enter BULK COOLING CENTER NAME");
+		return false;
+	}
+	
+	if (cc==null ||cc==""){
+		alert("please enter CENTER CODE");
+		return false;
+	}
+   else {
+		
+		if (isNaN(cc)){
+			alert("please enter CENTER CODE only in NUMERIC value");
+			return false;
+			
+		}
+   }
+			
+	if (cn==null ||cn==""){
+		alert("please enter CENTER NAME");
+		return false;
+	}
+	
+	if (lfn==null ||lfn==""){
+		alert("please enter L.F NUMBER");
+		return false;
+	}
+   else {
+		
+		if (isNaN(lfn)){
+			alert("please enter L.F NUMBER only in NUMERIC value");
+			return false;
+			
+		}
+   }
+		
+		if (bn==null ||bn==""){
+			alert("please enter BANK NAME");
+			return false;
+		}
+		
+		if (jac==null ||jac==""){
+			alert("please enter JOINT ACCOUNT NUMBER");
+			return false;
+		}
+	   else {
+			
+			if (isNaN(jac)){
+				alert("please enter JOINT ACCOUNT NUMBER only in NUMERIC value");
+				return false;
+				
+			}
+	   }
+			if (bl==null ||bl==""){
+				alert("please enter BANK LOCATION");
+				return false;
+			}
+			if (psna==null ||psna==""){
+				alert("please enter PS NAME");
+				return false;
+			}
+			if (h1==null ||h1==""){
+				alert("please enter HELPER1 NAME");
+				return false;
+			}
+			if (h2==null ||h2==""){
+				alert("please enter HELPER2 NAME");
+				return false;
+			}
+			if (h3==null ||h3==""){
+				alert("please enter HELPER3 NAME");
+				return false;
+			}
+			if (eq==null ||eq==""){
+				alert("please enter EQUIPMENT NAME");
+				return false;
+			}
+	
+	
+	return true;
+}
+
+</script>
+<body background="images123.jpg">
+<div id=”header”><img src="logo.jpg"alt="source"/>
+<p style="color:yellow;font-size:15pt;font-weight:bold;">VISAKHA DAIRY</p>
+</div>
+<div id ="navigation"><a href="Developer.html" style="text-decoration:none;color:white">About Developer</a></div>
+<div id="body">
+<form name = "myform"  onsubmit="return validateform()" action = "CenterdataCheck" method = "post">
+<div style="margin-top:20pt;margin-bottom:20pt"><font face="Agency FB" size="+8" 
+><u style="color:#006400;position:relative;left:400px;">CENTER DETAILS ENTRY</u></font></div>
+<div style="color:brown;position:relative;left:450px;font-family:calibri;font-style:italic;text-decoration: underline;">Time of the Account login is</div>
+<div  id= "demo" style="color:blue;position:relative;left:410px;font-family:TimesNewRoman;font-style:italic;margin-top:10pt;margin-bottom:10pt">
+<script type="text/javascript">document.getElementById("demo").innerHTML=Date();</script>
+</div>
+<div class= "o">
+<div class="h">CENTER DETAILS</div>
+<div class="n">BULK COOLING CENTER</div> 
+<div class="b"><input type="text" name="bulkcoolingcenter" /></div>
+<div class="n">CENTER CODE</div> 
+<div class="b" style="position:relative;left:532px"><input type="text" name="centercode" /></div>
+<div class="n">CENTER NAME</div> 
+<div class="b" style="position:relative;left:530px"><input type="text" name="centername" /></div>
+<div class="n"> MPI/MPAC</div> 
+<div class="b" style="position:relative;left:567px"><select name = "mpimpac" ><option value = "MPI"  selected>MPI</option>
+<option value = "MPAC"  selected>MPAC</option></select></div>
+<div class="n">LF NO:</div> 
+<div class="b" style="position:relative;left:594px"><input type="text" name="lfno" /></div>
+</div>
+<div class="o" >
+<div class="h"><p>BANK DETAILS</p></div>
+<div class="n">BANK NAME</div> 
+<div class="b" style="position:relative;left:549px"><input type="text" name="bankname" /></div>
+<div class="n">JOINT ACCOUNT NUMBER</div> 
+<div class="b" style="position:relative;left:440px"><input type="text" name="jointaccountnumber" /></div>
+<div class="n">BANK LOCATION</div> 
+<div class="b" style="position:relative;left:512px"><input type="text" name="banklocation" /></div>
+</div>
+<div class="0">
+<div class="h">STAFF DETAILS</div>
+<div class="n">PS</div> 
+<div class="b" style="position:relative;left:630px"><input type="text" name="psname" /></div>
+<div class="n">HELPER1</div> 
+<div class="b" style="position:relative;left:576px"><input type="text" name="helper1" /></div>
+<div class="n">HELPER2</div> 
+<div class="b" style="position:relative;left:576px"><input type="text" name="helper2" /></div>
+<div class="n">HELPER3</div> 
+<div class="b" style="position:relative;left:576px"><input type="text" name="helper3" /></div>
+</div>
+<div class="0">
+<div class="h">EQUIPMENT</div>
+<div class="n">EQUIPMENT IN CENTER</div> 
+<div class="b"style="position:relative;left:457px"><input type="text" name="equipmentincenter" /></div>
+</div>
+<div style="float:left;clear:left;position:relative;left:440px;margin:15px"><input type="submit" onclick="return confirm('Make Sure That Above Mentioned Details Are Correct Once you submitted it will NOT BE MODIFIED')" name="pay fee" value="Enter Center Details Successfully" />
+</div>
+</form>
+</div>
+<div id = footer>copyright@visakhaDairy</div>
+
+
+</body>
+</html>

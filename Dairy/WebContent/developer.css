@@ -1,0 +1,51 @@
+@CHARSET "ISO-8859-1";
+
+div#heading{
+	width :100%;
+	clear:left;
+	background-color:brown;
+	padding-top:1px;
+	padding-bottom:3px; 
+	color:yellow;
+	}
+div#heading p {
+	font-style:calibri;
+	font-size:30pt;
+	}	
+div#photo{
+	margin-bottom:30px;
+	margin-left:40px;
+	margin-top:40px;
+	border-radius:5px;
+	background-color:#D3D3D3;
+	padding:10px;
+	width :50%;
+	float:left;
+	
+	}
+div#technology{
+	margin-top:130px;
+	border-radius:5px;
+	background-color:#F0F8FF;
+	padding:10px;
+	float:left;
+	width :35%;
+	position:relative;
+	left:70px; 
+	padding-left:5px; 
+	
+	}
+div#matter{
+	
+	clear:left;
+	border-radius:5px;
+	background-color:#FFFFFF;
+	padding:20px;
+	width:80%;
+	position:relative;left:130px;
+	}
+div#matter p {
+	font-style:calibri;
+	font-size:20pt;
+	}		
+						

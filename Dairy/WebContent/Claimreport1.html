@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>CLAIMS REPORT GENERATE PANEL</title>
+<link rel="stylesheet" type="text/css" href="entry.css"/>
+</head>
+<script type="text/javascript">
+function validateform(){
+	var doe = document.myform.dateofentry.value
+	
+	
+	 if (doe==null||doe==""){
+		 alert("please enter DATE OF ENTRY");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!doe.match(re)){
+			 alert("please enter DATE OF ENTRY in CorrectFormat i.e is DD/MM/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	
+	
+			return true;
+}
+</script>
+<body background="images123.jpg">
+<div id=”header”><img src="logo.jpg"alt="source"/>
+<p style="color:yellow;font-size:15pt;font-weight:bold;">VISAKHA DAIRY</p>
+</div>
+<div id ="navigation"><a href="Developer.html" style="text-decoration:none;color:white">About Developer</a></div>
+<div id="body">
+<form name = "myform" onsubmit="return validateform()" action = "Claims1maintanence" method = "post">
+<div style="margin-top:20pt;margin-bottom:20pt"><font face="Agency FB" size="+8" 
+><u style="color:#006400;position:relative;left:370px;">REPORT OF DAILY CLAIMS</u></font></div>
+<div style="color:brown;position:relative;left:500px;font-family:calibri;font-style:italic;text-decoration: underline;">Time of Entry</div>
+<div  id= "demo" style="color:blue;position:relative;left:410px;font-family:TimesNewRoman;font-style:italic;margin-top:10pt;margin-bottom:10pt">
+<script type="text/javascript">document.getElementById("demo").innerHTML=Date();</script>
+</div>
+<div class="h">ENTER DATE OF ENTRY</div>
+
+<div class="n">DATE OF ENTRY</div> 
+<div class="b" style="position:relative;left:520px"><input type="text" name="dateofentry" /></div>
+
+
+<div style="float:left;clear:left;position:relative;left:440px;margin:15px"><input type="submit" onclick="return confirm('Make Sure That Above Mentioned Details Are Correct Once you submitted it will NOT BE MODIFIED')" name="pay fee" value="Submit the Details Successfully" />
+</div>
+</form>
+</div>
+<div id = footer>copyright@visakhaDairy</div>
+</body>

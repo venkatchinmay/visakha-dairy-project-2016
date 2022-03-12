@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>COMMITEE REPORT GENERATE PANEL</title>
+<link rel="stylesheet" type="text/css" href="entry.css"/>
+</head>
+<script type="text/javascript">
+function validateform(){
+	var bcc = document.myform.bulkcoolingcenter.value
+	
+	
+	if (bcc==null ||bcc==""){
+		alert("please enter BULK COOLING CENTER");
+		return false;
+	}
+	
+	
+			return true;
+}
+</script>
+<body background="images123.jpg">
+<div id=”header”><img src="logo.jpg"alt="source"/>
+<p style="color:yellow;font-size:15pt;font-weight:bold;">VISAKHA DAIRY</p>
+</div>
+<div id ="navigation"><a href="Developer.html" style="text-decoration:none;color:white">About Developer</a></div>
+<div id="body">
+<form name = "myform" onsubmit="return validateform()" action = "Commiteereceipt3maintanence" method = "post">
+<div style="margin-top:20pt;margin-bottom:20pt"><font face="Agency FB" size="+8" 
+><u style="color:#006400;position:relative;left:270px;">REPORT OF DIRECTORS LIST IN BCC</u></font></div>
+<div style="color:brown;position:relative;left:500px;font-family:calibri;font-style:italic;text-decoration: underline;">Time of Entry</div>
+<div  id= "demo" style="color:blue;position:relative;left:410px;font-family:TimesNewRoman;font-style:italic;margin-top:10pt;margin-bottom:10pt">
+<script type="text/javascript">document.getElementById("demo").innerHTML=Date();</script>
+</div>
+<div class="h">ENTER BCC NAME</div>
+
+<div class="n">BCC</div> 
+<div class="b" style="position:relative;left:612px"><input type="text" name="bulkcoolingcenter" /></div>
+
+
+<div style="float:left;clear:left;position:relative;left:440px;margin:15px"><input type="submit" onclick="return confirm('Make Sure That Above Mentioned Details Are Correct Once you submitted it will NOT BE MODIFIED')" name="pay fee" value="Submit the Details Successfully" />
+</div>
+</form>
+</div>
+<div id = footer>copyright@visakhaDairy</div>
+</body>
+</html>

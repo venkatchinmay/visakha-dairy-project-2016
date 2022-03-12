@@ -1,0 +1,91 @@
+@CHARSET "ISO-8859-1";
+
+div#header{
+	
+	background-color:white;
+	width:100%;
+	float:left;
+	
+	}
+div#navigation{
+	
+	background-color:#20B2AA;
+	width:100%;
+	float:left;
+	height:30px;
+	padding-left:10px;	
+	padding-top:8px;
+	padding-bottom:8px;
+	color:white;
+	font-weight: bold;
+	font-family:TimesNewRoman;
+	font-style:italic;
+	font-size:20pt;
+	
+}
+div#body{
+	
+	background-color:white;
+	width:100%;
+	float:left;
+	
+	
+}
+div#footer{
+	
+	background-color:#20B2AA;
+	width:100%;
+	float:left;
+	height:30px;
+	padding-left:10px;	
+	padding-top:8px;
+	padding-bottom:8px;
+	text-align:center;
+	color:white;
+	font-family:Arial Narrow;
+	font-style:italic;
+	font-size:20pt;
+	}
+	
+	
+	div#list,ul{
+	
+	list-style-type:none;
+	
+	
+	}
+	
+	div#list li{
+	 
+	 padding-top:10pt;
+	 padding-bottom:10pt;
+	 display:block;
+	background-color: #551A8B;
+	padding:3px 3px 3px 3px;
+	border-bottom:0px;
+	border-style:solid;
+	border-color:white;
+	
+	 
+	}
+	
+ div#list a{
+	font-family:Calibri;
+	text-decoration:none;
+	text-transform:uppercase;
+	}
+	
+a:link{
+	color:yellow;
+}
+a:visited{
+	color:yellow;
+	
+}
+a:hover{
+	color:white;
+	font-family:TimesNewRoman;
+	
+	}
+
+	

@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>CATTLE INSURANCE ENTRY PANEL </title>
+<link rel="stylesheet" type="text/css" href="entry.css"/>
+</head>
+<script type="text/javascript">
+function validateform(){
+	
+	
+	var cn = document.myform.centername.value
+	var bu = document.myform.buffalos.value
+	var co = document.myform.cows.value
+	var tp = document.myform.totalpremium.value
+	var bn = document.myform.bankname.value
+	var bl = document.myform.banklocation.value
+	var ddn = document.myform.ddnumber.value
+	var dda = document.myform.ddamount.value
+	var ddd = document.myform.dddate.value
+	var doe = document.myform.dateofentry.value
+	
+	
+	
+		
+	if (cn==null ||cn==""){
+		alert("please enter CENTER NAME");
+		return false;
+	}
+	
+	if (bu==null ||bu==""){
+		alert("please enter BUFFALOS NUMBER");
+		return false;
+	}
+   else {
+		
+		if (isNaN(bu)){
+			alert("please enter BUFFALOS NUMBER only in NUMERIC value");
+			return false;
+			
+		}
+     }
+	if (co==null ||co==""){
+		alert("please enter COWS NUMBER");
+		return false;
+	}
+else {
+		
+		if (isNaN(co)){
+			alert("please enter COWS NUMBER only in NUMERIC value");
+			return false;
+			
+		}
+     }
+	
+	if (tp==null ||tp==""){
+		alert("please enter TOTAL PREMIUM");
+		return false;
+	}
+else {
+		
+		if (isNaN(tp)){
+			alert("please enter TOTAL PREMIUM only in NUMERIC value");
+			return false;
+			
+		}
+     }
+	
+	if (bn==null ||bn==""){
+		alert("please enter BANK NAME");
+		return false;
+	}
+	
+	if (bl==null ||bl==""){
+		alert("please enter BANK LOCATION");
+		return false;
+	}
+	
+	if (ddn==null ||ddn==""){
+		alert("please enter DD NUMBER");
+		return false;
+	}
+	else {
+		if (isNaN(ddn)){
+			alert("please enter DD NUMBER only in NUMERIC value");
+			return false;
+			
+		}
+		else {
+			if(ddn.length!=6){
+				alert("please enter VALID DD NUMBER");
+				return false;
+			}
+		}
+		
+	}
+	
+	if (dda==null ||dda==""){
+		alert("please enter DD AMOUNT");
+		return false;
+	}
+else {
+		
+		if (isNaN(dda)){
+			alert("please enter DD AMOUNT only in NUMERIC value");
+			return false;
+			
+		}
+     }
+	 
+	 if (ddd==null||ddd==""){
+		 alert("please enter DD DATE");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!ddd.match(re)){
+			 alert("please enter DD DATE in CorrectFormat i.e is MM/DD/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	 
+	 if (doe==null||doe==""){
+		 alert("please enter DATE OF ENTRY");
+		 return false;
+	 }
+	 else{
+		 re = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+		 
+		 if(!doe.match(re)){
+			 alert("please enter DATE OF ENTRY in CorrectFormat i.e is DD/MM/YYYY ; PLEASE NOTE YEAR MUST BE FULL");
+			 return false;
+		 }
+	 }
+	 
+	
+	return true;
+}
+
+</script>
+<body background="images123.jpg">
+<div id=”header”><img src="logo.jpg"alt="source"/>
+<p style="color:yellow;font-size:15pt;font-weight:bold;">VISAKHA DAIRY</p>
+</div>
+<div id ="navigation"><a href="Developer.html" style="text-decoration:none;color:white">About Developer</a></div>
+<div id="body">
+<form name = "myform"  onsubmit="return validateform()" action = "CattleinsuranceCheck1" method = "post">
+<div style="margin-top:20pt;margin-bottom:20pt"><font face="Agency FB" size="+8" 
+><u style="color:#006400;position:relative;left:360px;">CATTLE INSURANCE ENTRY</u></font></div>
+<div style="color:brown;position:relative;left:450px;font-family:calibri;font-style:italic;text-decoration: underline;">Time of the Account login is</div>
+<div  id= "demo" style="color:blue;position:relative;left:410px;font-family:TimesNewRoman;font-style:italic;margin-top:10pt;margin-bottom:10pt">
+<script type="text/javascript">document.getElementById("demo").innerHTML=Date();</script>
+</div>
+
+<div class="h">CENTER DETAILS </div>
+
+<div class="n">CENTER NAME</div> 
+<div class="b" style="position:relative;left:528px"><input type="text" name="centername" /></div>
+<div class="h">ANIMALS</div> 
+<div class="n">BUFFALOS</div>
+<div class="b" style="position:relative;left:563px"><input type="text" name="buffalos" /></div>
+<div class="n">COWS</div> 
+<div class="b" style="position:relative;left:600px"><input type="text" name="cows" /></div>
+<div class="h">INSURANCE DETAILS</div> 
+<div class="n">TOTAL PREMIUM</div> 
+<div class="b" style="position:relative;left:510px"><input type="text" name="totalpremium" /></div>
+
+<div class="h"><p>BANK DETAILS</p></div>
+<div class="n">BANK NAME</div> 
+<div class="b" style="position:relative;left:550px"><input type="text" name="bankname" /></div>
+<div class="n">BANK LOCATION</div> 
+<div class="b" style="position:relative;left:513px"><input type="text" name="banklocation" /></div>
+<div class="n">DD NUMBER</div> 
+<div class="b" style="position:relative;left:552px"><input type="text" name="ddnumber" /></div>
+<div class="n">DD AMOUNT</div> 
+<div class="b" style="position:relative;left:550px"><input type="text" name="ddamount" /></div>
+<div class="n">DD DATE</div> 
+<div class="b" style="position:relative;left:579px"><input type=text name="dddate" /></div>
+<div class="n">DD MONTH</div> 
+<div class="b" style="position:relative;left:562px"><select name = "ddmonth" >
+<option value = "APRIL"  selected>APRIL</option>
+<option value = "MAY"  selected>MAY</option>
+<option value = "JUNE"  selected>JUNE</option>
+<option value = "JULY"  selected>JULY</option>
+<option value = "AUGUST"  selected>AUGUST</option>
+<option value = "SEPTEMBER"  selected>SEPTEMBER</option>
+<option value = "OCTOBER"  selected>OCTOBER</option>
+<option value = "NOVEMBER"  selected>NOVEMBER</option>
+<option value = "DECEMBER"  selected>DECEMBER</option>
+<option value = "JANUARY"  selected>JANUARY</option>
+<option value = "FEBRUARY"  selected>FEBRUARY</option>
+<option value = "MARCH"  selected>MARCH</option>
+</select></div>
+<div class="n">DATE OF ENTRY</div> 
+<div class="b" style="position:relative;left:520px"><input type="text" name="dateofentry" /></div>
+
+<div style="float:left;clear:left;position:relative;left:420px;margin:15px"><input type="submit" onclick="return confirm('Make Sure That Above Mentioned Details Are Correct Once you submitted it will NOT BE MODIFIED')" name="pay fee" value="Submit the Details Successfully" />
+</div>
+</form>
+</div>
+<div id = footer>copyright@visakhaDairy</div>
+
+
+</body>
+</html>

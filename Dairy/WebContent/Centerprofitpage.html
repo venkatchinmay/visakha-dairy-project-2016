@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>JOINT ACCOUNT AND PROFIT DETAILS</title>
+<link rel="stylesheet" type="text/css" href="entry.css"/>
+</head>
+<script type="text/javascript">
+
+function validateform(){
+	
+	
+	var cn = document.myform.centername.value
+	var lfn = document.myform.jointaccountbalance.value
+	var lfno = document.myform.fdamount.value
+	var jac = document.myform.monthprofitgross.value
+	var jact = document.myform.grossprofitpercentage.value
+	var jactn = document.myform.wetprofit.value
+	var jactm = document.myform.wetprofitpercentage.value
+	
+	
+	
+			
+	if (cn==null ||cn==""){
+		alert("please enter CENTER NAME");
+		return false;
+	}
+	
+	if (lfn==null ||lfn==""){
+		alert("please enter JOINT ACCOUNT BALANCE");
+		return false;
+	}
+   else {
+		
+		if (isNaN(lfn)){
+			alert("please enter JOINT ACCOUNT BALANCE only in NUMERIC value");
+			return false;
+			
+		}
+   }
+		
+	if (lfno==null ||lfno==""){
+		alert("please enter FD AMOUNT");
+		return false;
+	}
+   else {
+		
+		if (isNaN(lfno)){
+			alert("please enter FD AMOUNT only in NUMERIC value");
+			return false;
+			
+		}
+   }
+		
+		if (jac==null ||jac==""){
+			alert("please enter MONTH PROFIT GROSS");
+			return false;
+		}
+	   else {
+			
+			if (isNaN(jac)){
+				alert("please enter MONTH PROFIT GROSS only in NUMERIC value");
+				return false;
+				
+			}
+	   }
+
+
+		if (jactn==null ||jactn==""){
+			alert("please enter WET PROFIT");
+			return false;
+		}
+	   else {
+			
+			if (isNaN(jactn)){
+				alert("please enter WET PROFIT  only in NUMERIC value");
+				return false;
+				
+			}
+	   }
+		if (jactm==null ||jactm==""){
+			alert("please enter WET PROFIT PERCENTAGE");
+			return false;
+		}
+	   else {
+			
+			if (isNaN(jactm)){
+				alert("please enter WET PROFIT PERCENTAGE  only in NUMERIC value");
+				return false;
+				
+			}
+	   }
+	
+	return true;
+}
+
+</script>
+<body background="images123.jpg">
+<div id=”header”><img src="logo.jpg"alt="source"/>
+<p style="color:yellow;font-size:15pt;font-weight:bold;">VISAKHA DAIRY</p>
+</div>
+<div id ="navigation"><a href="Developer.html" style="text-decoration:none;color:white">About Developer</a></div>
+<div id="body">
+<form name = "myform"  onsubmit="return validateform()" action = "CenterprofitCheck" method = "post">
+<div style="margin-top:20pt;margin-bottom:20pt"><font face="Agency FB" size="+8" 
+><u style="color:#006400;position:relative;left:280px;">JOINT ACCOUNT AND PROFIT DETAILS</u></font></div>
+<div style="color:brown;position:relative;left:450px;font-family:calibri;font-style:italic;text-decoration: underline;">Time of the Account login is</div>
+<div  id= "demo" style="color:blue;position:relative;left:360px;font-family:TimesNewRoman;font-style:italic;margin-top:10pt;margin-bottom:10pt">
+<script type="text/javascript">document.getElementById("demo").innerHTML=Date();</script>
+</div>
+<div class="n">CENTER NAME</div> 
+<div class="b" style="position:relative;left:530px"><input type="text" name="centername" /></div>
+<div class="n">JOINT ACCOUNT BALANCE</div> 
+<div class="b" style="position:relative;left:435px"><input type="text" name="jointaccountbalance" /></div>
+<div class="n">FD AMOUNT</div> 
+<div class="b" style="position:relative;left:554px"><input type="text" name="fdamount" /></div>
+<div class="n">MONTH PROFIT GROSS</div> 
+<div class="b" style="position:relative;left:468px"><input type="text" name="monthprofitgross" /></div>
+<div class="n">GROSS PROFIT PERCENTAGE</div> 
+<div class="b" style="position:relative;left:420px"><input type="text" name="grossprofitpercentage" /></div>
+<div class="n">WET PROFIT</div> 
+<div class="b" style="position:relative;left:551px"><input type="text" name="wetprofit" /></div>
+<div class="n">WET PROFIT PERCENTAGE</div> 
+<div class="b" style="position:relative;left:438px"><input type="text" name="wetprofitpercentage" /></div>
+<div class="n">MONTH</div> 
+<div class="b" style="position:relative;left:592px"><select name = "month" >
+<option value = "APRIL"  selected>APRIL</option>
+<option value = "MAY"  selected>MAY</option>
+<option value = "JUNE"  selected>JUNE</option>
+<option value = "JULY"  selected>JULY</option>
+<option value = "AUGUST"  selected>AUGUST</option>
+<option value = "SEPTEMBER"  selected>SEPTEMBER</option>
+<option value = "OCTOBER"  selected>OCTOBER</option>
+<option value = "NOVEMBER"  selected>NOVEMBER</option>
+<option value = "DECEMBER"  selected>DECEMBER</option>
+<option value = "JANUARY"  selected>JANUARY</option>
+<option value = "FEBRUARY"  selected>FEBRUARY</option>
+<option value = "MARCH"  selected>MARCH</option>
+</select></div>
+<div style="float:left;clear:left;position:relative;left:440px;margin:15px"><input type="submit" onclick="return confirm('Make Sure That Above Mentioned Details Are Correct Once you submitted it will NOT BE MODIFIED')" name="pay fee" value="Enter Center Details Successfully" />
+</div>
+</form>
+</div>
+<div id = footer>copyright@visakhaDairy</div>
+
+
+</body>
+</html>
